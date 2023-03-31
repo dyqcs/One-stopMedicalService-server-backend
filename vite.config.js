@@ -22,4 +22,9 @@ export default defineConfig({
             "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
     },
+    // 反向代理
+    server: {
+        host: '0.0.0.0', //服务器ip地址
+        port: 5566, //本地端口
+    },
 })
